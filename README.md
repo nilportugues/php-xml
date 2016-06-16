@@ -1,16 +1,13 @@
 # XML Transformer
 
-[![Build Status](https://travis-ci.org/nilportugues/php-xml.svg)]
+[![Build Status](https://travis-ci.org/nilportugues/php-xml.svg?)]
 (https://travis-ci.org/nilportugues/php-xml) 
-[![Coverage Status](https://coveralls.io/repos/nilportugues/xml-transformer/badge.svg?branch=master&service=github)]
-(https://coveralls.io/github/nilportugues/xml-transformer?branch=master) 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/xml-transformer/badges/quality-score.png?b=master)]
-(https://scrutinizer-ci.com/g/nilportugues/xml-transformer/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2/mini.png)]
-(https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2) [![Latest Stable Version](https://poser.pugx.org/nilportugues/xml/v/stable)]
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/php-xml/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nilportugues/php-xml/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/dd8604ee-1ee2-4b0e-9cfe-b8a642308d20/mini.png?)]
+(https://insight.sensiolabs.com/projects/dd8604ee-1ee2-4b0e-9cfe-b8a642308d20) [![Latest Stable Version](https://poser.pugx.org/nilportugues/xml/v/stable?)]
 (https://packagist.org/packages/nilportugues/xml) 
-[![Total Downloads](https://poser.pugx.org/nilportugues/xml/downloads)]
+[![Total Downloads](https://poser.pugx.org/nilportugues/xml/downloads?)]
 (https://packagist.org/packages/nilportugues/xml) 
-[![License](https://poser.pugx.org/nilportugues/xml/license)]
+[![License](https://poser.pugx.org/nilportugues/xml/license?)]
 (https://packagist.org/packages/nilportugues/xml) 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://paypal.me/nilportugues)
 
