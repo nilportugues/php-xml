@@ -1,0 +1,33 @@
+{
+    "name": "nilportugues/xml",
+    "type": "library",
+    "description": "XML transformer outputting valid API responses.",
+    "keywords": ["xml", "api", "serializer", "transformer", "psr7", "response"],
+    "homepage": "http://nilportugues.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nil Portugués Calderó",
+            "email": "contact@nilportugues.com",
+            "role": "Project Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "nilportugues/api-transformer": "^1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "friendsofphp/php-cs-fixer": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "NilPortugues\\Api\\Xml\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NilPortugues\\Tests\\Api\\Xml\\": "tests/"
+        }
+    }
+}
