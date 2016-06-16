@@ -2,10 +2,10 @@
 
 [![Build Status](https://travis-ci.org/nilportugues/php-xml.svg)]
 (https://travis-ci.org/nilportugues/php-xml) 
-[![Coverage Status](https://coveralls.io/repos/nilportugues/xml-transformer/badge.svg?branch=master&service=github)]
-(https://coveralls.io/github/nilportugues/xml-transformer?branch=master) 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/xml-transformer/badges/quality-score.png?b=master)]
-(https://scrutinizer-ci.com/g/nilportugues/xml-transformer/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2/mini.png)]
+[![Coverage Status](https://coveralls.io/repos/nilportugues/xml-xml/badge.svg?branch=master&service=github)]
+(https://coveralls.io/github/nilportugues/xml-xml?branch=master) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/xml-xml/badges/quality-score.png?b=master)]
+(https://scrutinizer-ci.com/g/nilportugues/xml-xml/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2/mini.png)]
 (https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2) [![Latest Stable Version](https://poser.pugx.org/nilportugues/xml/v/stable)]
 (https://packagist.org/packages/nilportugues/xml) 
 [![Total Downloads](https://poser.pugx.org/nilportugues/xml/downloads)]
