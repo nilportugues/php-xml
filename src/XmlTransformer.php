@@ -11,13 +11,11 @@
 
 namespace NilPortugues\Api\Xml;
 
-use DOMDocument;
 use NilPortugues\Api\Transformer\Helpers\RecursiveDeleteHelper;
 use NilPortugues\Api\Transformer\Helpers\RecursiveFormatterHelper;
 use NilPortugues\Api\Transformer\Helpers\RecursiveRenamerHelper;
 use NilPortugues\Api\Transformer\Transformer;
 use NilPortugues\Serializer\Serializer;
-use SimpleXMLElement;
 
 /**
  * Class XmlTransformer.
@@ -28,20 +26,15 @@ class XmlTransformer extends Transformer
     const LINKS = 'links';
 
     /**
-     * @var array
-     */
-    private $linkKeys = [
-        self::LINKS_HREF,
-    ];
-
-    /**
      * @param mixed $value
      *
      * @return string
      */
     public function serialize($value)
     {
-        return $this->toXml($this->serialization($value));
+        $presenter = new XmlPresenter();
+
+        return $presenter->output($this->serialization($value));
     }
 
     /**
@@ -290,72 +283,5 @@ class XmlTransformer extends Transformer
         }
 
         return \str_replace($original, $idValues, $url);
-    }
-
-    protected function toXml($array)
-    {
-        $xmlData = new SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><data></data>');
-        $this->arrayToXml($array, $xmlData);
-        $xml = $xmlData->asXML();
-        $xmlDoc = new DOMDocument();
-        $xmlDoc->loadXML($xml);
-        $xmlDoc->preserveWhiteSpace = false;
-        $xmlDoc->formatOutput = true;
-        $xmlDoc->substituteEntities = false;
-
-        return rtrim(html_entity_decode($xmlDoc->saveXML()), "\n");
-    }
-
-    /**
-     * Converts an array to XML using SimpleXMLElement.
-     *
-     * @param array            $data
-     * @param SimpleXMLElement $xmlData
-     */
-    private function arrayToXml(array &$data, SimpleXMLElement $xmlData)
-    {
-        foreach ($data as $key => $value) {
-            $key = ltrim($key, '_');
-            if (\is_array($value)) {
-                if (\is_numeric($key)) {
-                    $key = 'resource';
-                }
-                if (false === empty($value[self::LINKS_HREF])) {
-                    $subnode = $xmlData->addChild('link');
-                    $subnode->addAttribute('rel', $key);
-                    foreach ($this->linkKeys as $linkKey) {
-                        if (!empty($value[$linkKey])) {
-                            $subnode->addAttribute($linkKey, $value[$linkKey]);
-                        }
-                    }
-                } else {
-                    if (!empty($value[self::LINKS][self::LINKS_HREF])) {
-                        $subnode = $xmlData->addChild('resource');
-                        $subnode->addAttribute(
-                            self::LINKS_HREF,
-                            $value[self::LINKS][self::LINKS_HREF]
-                        );
-                        if ($key !== 'resource') {
-                            $subnode->addAttribute('rel', $key);
-                        }
-                    } else {
-                        $subnode = $xmlData->addChild($key);
-                    }
-                }
-                $this->arrayToXml($value, $subnode);
-            } else {
-                if ($key !== self::LINKS) {
-                    if ($value === true || $value === false) {
-                        $value = ($value)  ? 'true' : 'false';
-                    }
-
-                    if ($key === self::LINKS_HREF) {
-                        break;
-                    }
-
-                    $xmlData->addChild("$key", '<![CDATA['.html_entity_decode($value).']]>');
-                }
-            }
-        }
     }
 }
