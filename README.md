@@ -3,8 +3,8 @@
 [![Build Status](https://travis-ci.org/nilportugues/php-xml.svg)]
 (https://travis-ci.org/nilportugues/php-xml) 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nilportugues/xml-xml/badges/quality-score.png?b=master)]
-(https://scrutinizer-ci.com/g/nilportugues/xml-xml/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2/mini.png)]
-(https://insight.sensiolabs.com/projects/76f021fa-6559-4faf-a010-5dfb95cd70e2) [![Latest Stable Version](https://poser.pugx.org/nilportugues/xml/v/stable)]
+(https://scrutinizer-ci.com/g/nilportugues/xml-xml/?branch=master) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/dd8604ee-1ee2-4b0e-9cfe-b8a642308d20/mini.png)]
+(https://insight.sensiolabs.com/projects/dd8604ee-1ee2-4b0e-9cfe-b8a642308d20) [![Latest Stable Version](https://poser.pugx.org/nilportugues/xml/v/stable)]
 (https://packagist.org/packages/nilportugues/xml) 
 [![Total Downloads](https://poser.pugx.org/nilportugues/xml/downloads)]
 (https://packagist.org/packages/nilportugues/xml) 
